@@ -1,0 +1,19 @@
+.orders-container {
+    padding: 20px;
+  }
+  
+  .orders-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .orders-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .orders-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
