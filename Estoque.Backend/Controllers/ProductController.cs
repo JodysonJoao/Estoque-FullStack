@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Estoque.Backend.Services;
 using Estoque.Backend.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Estoque.Backend.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("products")]
     public class ProductController : ControllerBase
@@ -18,6 +20,7 @@ namespace Estoque.Backend.Controllers
         {
             return Ok(_productService.Get());
         }
+
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
@@ -28,7 +31,9 @@ namespace Estoque.Backend.Controllers
             }
             return Ok(product);
         }
+
         [HttpPost]
+        [Route("create")]
         public IActionResult Create([FromBody] ProductCreate product)
         {
             try
