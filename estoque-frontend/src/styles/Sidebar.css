@@ -1,29 +1,88 @@
 .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #4169E1;
-    color: white;
-    padding: 20px;
-  }
-  
-  .sidebar ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .sidebar li {
-    margin-bottom: 10px;
-  }
-  
-  .sidebar a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-  
-  .sidebar a:hover {
-    text-decoration: underline;
-  }
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background-color: #051850;
+  color: white;
+  padding: 20px 0;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 50px;
+}
+
+.sidebar li {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar ul li:hover::before {
+  content: "";
+  position: absolute;
+  left: -10px; 
+  top: 50%; 
+  width: calc(100% + 50px);
+  height: 50px; 
+  background-color: rgba(255, 255, 255, 0.2); 
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.sidebar ul li img {
+  max-width: 20px;
+  max-height: 20px;
+  object-fit: contain;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sidebar ul li:hover img {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.sidebar li.user img {
+  content: url("/public/user.png");
+}
+
+.sidebar li.orders img {
+  content: url("/public/shopping-cart.png");
+}
+
+.sidebar li.histogram img {
+  content: url("/public/display-chart-up.png");
+}
+
+.sidebar li.user:hover img {
+  content: url("/public/user-branco.png");
+}
+
+.sidebar li.orders:hover img {
+  content: url("/public/shopping-cart-branco.png");
+}
+
+.sidebar li.histogram:hover img {
+  content: url("/public/display-chart-up-branco.png");
+}
+
+.caixas {
+  max-width: 30px;
+  max-height: 30px;
+  object-fit: contain;
+}
