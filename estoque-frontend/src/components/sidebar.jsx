@@ -12,6 +12,11 @@ function Sidebar() {
             <img src="/public/images/user.png" alt="User" />
           </Link>
         </li>
+        <li className="inventory">
+          <Link to="/inventory">
+            <img src="/public/images/inventory.png" alt="Inventory" />
+          </Link>
+        </li>
         <li className="orders">
           <Link to="/orders">
             <img src="/public/images/shopping-cart.png" alt="Orders" />

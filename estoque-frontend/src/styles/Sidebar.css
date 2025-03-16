@@ -61,6 +61,10 @@
   content: url("/public/user.png");
 }
 
+.sidebar li.inventory img {
+  content: url("/public/inventory.png");
+}
+
 .sidebar li.orders img {
   content: url("/public/shopping-cart.png");
 }
@@ -71,6 +75,10 @@
 
 .sidebar li.user:hover img {
   content: url("/public/user-branco.png");
+}
+
+.sidebar li.inventory:hover img {
+  content: url("/public/inventory-ativo.png");
 }
 
 .sidebar li.orders:hover img {
