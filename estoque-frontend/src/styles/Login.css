@@ -70,19 +70,19 @@ html, body {
   }
   
   .username {
-    background-image: url('/login.png');
+    background-image: url('/login/login.png');
   } 
 
   .username:focus {
-    background-image: url('/login-ativo.png');
+    background-image: url('/login/login-ativo.png');
   }
 
   .password {
-    background-image: url('/password.png');
+    background-image: url('/login/password.png');
   }
 
   .password:focus {
-    background-image: url('/password-ativo.png');
+    background-image: url('/login/password-ativo.png');
   }
 
   .login-form button {

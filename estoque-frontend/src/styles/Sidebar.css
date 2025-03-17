@@ -58,35 +58,35 @@
 }
 
 .sidebar li.user img {
-  content: url("/public/user.png");
+  content: url("/public/sidebar/user.png");
 }
 
 .sidebar li.inventory img {
-  content: url("/public/inventory.png");
+  content: url("/public/sidebar/inventory.png");
 }
 
 .sidebar li.orders img {
-  content: url("/public/shopping-cart.png");
+  content: url("/public/sidebar/shopping-cart.png");
 }
 
 .sidebar li.histogram img {
-  content: url("/public/display-chart-up.png");
+  content: url("/public/sidebar/display-chart-up.png");
 }
 
 .sidebar li.user:hover img {
-  content: url("/public/user-branco.png");
+  content: url("/public/sidebar/user-branco.png");
 }
 
 .sidebar li.inventory:hover img {
-  content: url("/public/inventory-ativo.png");
+  content: url("/public/sidebar/inventory-ativo.png");
 }
 
 .sidebar li.orders:hover img {
-  content: url("/public/shopping-cart-branco.png");
+  content: url("/public/sidebar/shopping-cart-branco.png");
 }
 
 .sidebar li.histogram:hover img {
-  content: url("/public/display-chart-up-branco.png");
+  content: url("/public/sidebar/display-chart-up-branco.png");
 }
 
 .caixas {

@@ -17,7 +17,7 @@ function Login() {
         </form>
       </div>
       <div className="delay-container">
-        <img src="/delay.png" alt="" />
+        <img src="/login/delay.png" alt="" />
       </div>
     </div>
   );
