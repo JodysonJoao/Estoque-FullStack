@@ -4,8 +4,11 @@ import "../styles/Inventory.css";
 const Inventory = () => {
 
   const [products, setProducts] = useState([
+    { id: 1, name: "Blusa Azul", price: 50, stock: 15, category: "Blusas", image: "https://picsum.photos/200" },
+    { id: 2, name: "Short Preto", price: 80, stock: 10, category: "Shorts", image: "https://picsum.photos/200" },
+    { id: 3, name: "Calça Jeans", price: 120, stock: 5, category: "Calças", image: "https://picsum.photos/200" }
   ]);
-
+  
   const [selectedCategory, setSelectedCategory] = useState("Todos");
 
   const categories = ["Todos", "Blusas", "Shorts", "Calças", "Meias", "Blusas de Proteção", "Boné"];
