@@ -12,6 +12,9 @@ namespace Estoque.Backend.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Product>().HasKey(p => p.id);
+            modelBuilder.Entity<Product>()
+            .Property(p => p.price)
+            .HasColumnType("decimal(18,2)");
         }
     }
 }

@@ -6,35 +6,35 @@
 
         public string image { get; set; }
         public string name { get; set; }
-        public double price { get; set; }
+        public decimal price { get; set; }
 
+        public string category { get; set; }
         public int stock { get; set; }
     }
-
-    public class ProductCreate
-    {
-        public string image { get; set; }
-        public string name { get; set; }
-        public double price { get; set; }
-
-        public int stock { get; set; }
-
-        public void Validate()
+        public class ProductCreate
         {
-            if (string.IsNullOrEmpty(name))
-            {
-                throw new Exception("Name is required");
-            }
+            public string Name { get; set; }
+            public decimal Price { get; set; }
+            public string Category { get; set; }
+            public int Stock { get; set; }
+            public IFormFile Image { get; set; }
 
-            if (price <= 0)
+            public void Validate()
             {
-                throw new Exception("Price is required");
-            }
+                if (string.IsNullOrEmpty(Name))
+                {
+                    throw new Exception("Name is required");
+                }
 
-            if (string.IsNullOrEmpty(image))
-            {
-                throw new Exception("Image is required");
+                if (Price <= 0)
+                {
+                    throw new Exception("Price must be greater than zero");
+                }
+
+                if (Image == null || Image.Length == 0)
+                {
+                    throw new Exception("Image is required");
+                }
             }
         }
-    }
 }

@@ -1,24 +1,25 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Estoque.Backend.Models;
 using Estoque.Backend.Services;
-using Estoque.Backend.Models;
-using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Estoque.Backend.Controllers
 {
-    [Authorize]
     [ApiController]
     [Route("products")]
-    public class ProductController : ControllerBase
+    public class ProductsController : ControllerBase
     {
         private readonly IProductService _productService;
-        public ProductController(IProductService productService)
+
+        public ProductsController(IProductService productService)
         {
             _productService = productService;
         }
+
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(_productService.Get());
+            var products = _productService.Get();
+            return Ok(products);
         }
 
         [HttpGet("{id}")]
@@ -33,32 +34,33 @@ namespace Estoque.Backend.Controllers
         }
 
         [HttpPost]
-        [Route("create")]
-        public IActionResult Create([FromBody] ProductCreate product)
+        public IActionResult Create([FromForm] ProductCreate product)
         {
             try
             {
                 var newProduct = _productService.Create(product);
                 return CreatedAtAction(nameof(GetById), new { id = newProduct.id }, newProduct);
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                return BadRequest(e.Message);
+                return BadRequest(ex.Message);
             }
         }
+
         [HttpPut("{id}")]
-        public IActionResult Update(int id, [FromBody] ProductCreate product)
+        public IActionResult Update(int id, [FromForm] ProductCreate product)
         {
             try
             {
                 var updatedProduct = _productService.Update(id, product);
                 return Ok(updatedProduct);
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                return BadRequest(e.Message);
+                return BadRequest(ex.Message);
             }
         }
+
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
@@ -67,9 +69,9 @@ namespace Estoque.Backend.Controllers
                 _productService.Delete(id);
                 return NoContent();
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                return BadRequest(e.Message);
+                return NotFound(ex.Message);
             }
         }
     }
