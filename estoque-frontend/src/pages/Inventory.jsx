@@ -83,6 +83,7 @@ const Inventory = () => {
 
   return (
     <div className="inventory-container">
+      <img className="overload-img" src="/inventory/overload.png" alt="" />
       <div className="inventory-header">
         <h1>Produtos</h1>
         <button className="add-product-button" onClick={() => setShowModal(true)}>

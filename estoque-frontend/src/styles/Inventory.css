@@ -87,8 +87,8 @@
 }
 
 .product-image {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -179,7 +179,7 @@
 .delete-btn {
   align-self: center;
   margin-left: auto;
-  margin-top: 15px;
+  margin-top: 0;
   background-color: #ff4d4d;
   color: white;
   border: none;

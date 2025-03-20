@@ -13,18 +13,6 @@ var jwtsettings = builder.Configuration.GetSection("JwtSettings");
 var key = Encoding.ASCII.GetBytes(jwtsettings["Secret"]);
 var corsPolicy = "AllowSpecificOrigins";
 
-
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy(name: corsPolicy,
-        policy =>
-        {
-            policy.WithOrigins("http://localhost:3000")
-                  .AllowAnyMethod()
-                  .AllowAnyHeader(); 
-        });
-});
-
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: corsPolicy,
@@ -42,6 +30,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddSingleton<AuthService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

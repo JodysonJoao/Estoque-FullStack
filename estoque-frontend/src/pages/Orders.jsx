@@ -1,66 +1,106 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Orders.css";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 const Orders = () => {
-  const inventoryProducts = [
-  ];
-
-  const [orders, setOrders] = useState([
-  ]);
-
+  const [orders, setOrders] = useState([]);
   const [selectedStatus, setSelectedStatus] = useState("Todos");
   const [showModal, setShowModal] = useState(false);
+  const [inventoryProducts, setInventoryProducts] = useState([]);
   const [newOrder, setNewOrder] = useState({
     client: "",
     products: [{ product: null, price: 0 }],
-    total: 0
+    total: 0,
   });
 
   const statuses = ["Todos", "Pendente", "Em Andamento", "Concluído", "Cancelado"];
+
+  useEffect(() => {
+    fetch(`${API_URL}/orders`)
+      .then(response => response.json())
+      .then(data => setOrders(data))
+      .catch(error => console.error("Erro ao buscar pedidos:", error));
+
+    fetch(`${API_URL}/products`)
+      .then(response => response.json())
+      .then(data => setInventoryProducts(data))
+      .catch(error => console.error("Erro ao buscar produtos:", error));
+  }, []);
 
   const filteredOrders = selectedStatus === "Todos"
     ? orders
     : orders.filter(order => order.status === selectedStatus);
 
-  const handleCompleteOrder = (id) => {
-    setOrders(orders.map(order =>
-      order.id === id ? { ...order, status: "Concluído" } : order
-    ));
+    const handleCompleteOrder = (id) => {
+      fetch(`${API_URL}/orders/${id}/status`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ status: "Concluído" }),
+      })
+      .then(response => {
+        if (!response.ok) {
+          return response.json().then(err => { throw new Error(err.message); });
+        }
+        return response.json();
+      })
+      .then(() => {
+        setOrders(orders.map(order => 
+          order.id === id ? { ...order, status: "Concluído" } : order
+        ));
+      })
+      .catch(error => console.error("Erro ao atualizar status:", error.message));
   };
+  
 
   const handleDeleteOrder = (id) => {
-    setOrders(orders.filter(order => order.id !== id));
+    fetch(`${API_URL}/orders/${id}`, { method: "DELETE" })
+      .then(() => {
+        setOrders(orders.filter(order => order.id !== id));
+      })
+      .catch(error => console.error("Erro ao deletar pedido:", error));
   };
 
   const handleAddOrder = () => {
-    if (!newOrder.client || newOrder.products.some(product => !product.product)) {
-      alert("Por favor, preencha todos os campos corretamente.");
+    if (!newOrder.client || newOrder.products.some(p => !p.product)) {
+      alert("Preencha todos os campos.");
       return;
     }
-  
-    const total = newOrder.products.reduce((sum, product) => sum + (product.price || 0), 0);
-  
-    setOrders([
-      ...orders,
-      {
-        id: orders.length + 1,
-        client: newOrder.client,
-        status: "Pendente",
-        total: total,
-        date: new Date().toLocaleDateString(),
-        products: newOrder.products.map(p => p.product),
-      }
-    ]);
-  
-    setShowModal(false);
-    setNewOrder({ client: "", products: [{ product: null, price: 0 }], total: 0 });
-  };  
 
+    const total = newOrder.products.reduce((sum, p) => sum + (p.price || 0), 0);
+    const orderData = {
+      client: newOrder.client, 
+      status: "Pendente",
+      total: total,
+      products: newOrder.products.map(p => ({
+        productId: p.product?.id,
+        productName: p.product?.name, 
+        price: p.product?.price || 0,
+        image: p.product?.image,
+      }))
+    };
+    
+
+    console.log("Dados enviados:", orderData); 
+
+    fetch(`${API_URL}/orders`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(orderData),
+    })
+      .then(response => response.json())
+      .then(newOrder => {
+        setOrders([...orders, newOrder]);
+        setShowModal(false);
+        setNewOrder({ client: "", products: [{ product: null, price: 0 }] });
+      })
+      .catch(error => console.error("Erro ao adicionar pedido:", error));
+  };
 
   const handleProductChange = (index, product) => {
     const updatedProducts = [...newOrder.products];
     updatedProducts[index].product = product;
-    updatedProducts[index].price = product ? product.price : 0; 
+    updatedProducts[index].price = product ? product.price : 0;
     setNewOrder({ ...newOrder, products: updatedProducts });
   };
 
@@ -69,19 +109,19 @@ const Orders = () => {
     updatedProducts[index].price = parseFloat(price);
     setNewOrder({ ...newOrder, products: updatedProducts });
   };
-  
+
   const handleAddProductField = () => {
     setNewOrder({
       ...newOrder,
       products: [...newOrder.products, { product: null, price: 0 }]
     });
-  };  
+  };
 
   const totalPrice = newOrder.products.reduce((sum, product) => sum + product.price, 0);
 
   return (
     <div className="orders-container">
-      <img className="warehouse-img"src="/public/orders/warehouse.png" alt="" />
+      <img className="warehouse-img" src="/public/orders/warehouse.png" alt="" />
       <div className="orders-header">
         <h1>Pedidos</h1>
         <button className="add-order-button" onClick={() => setShowModal(true)}>
@@ -113,7 +153,7 @@ const Orders = () => {
             <tr key={order.id}>
               <td>{order.client}</td>
               <td>
-                <span className={`status ${order.status.toLowerCase()}`}>{order.status}</span>
+                <span className={`status ${String(order.status).toLowerCase()}`}>{order.status}</span>
               </td>
               <td>R$ {order.total.toFixed(2)}</td>
               <td>{order.date}</td>
@@ -121,7 +161,7 @@ const Orders = () => {
                 <div className="order-products">
                   {order.products.map(product => (
                     <div key={product.id} className="product-info">
-                      <img src={product.image} alt={product.name} className="product-image" />
+                      <img src={`http://localhost:5179${product.image}`} alt={product.name} className="product-image" />
                       <span>{product.name}</span>
                     </div>
                   ))}
@@ -173,12 +213,13 @@ const Orders = () => {
                     />
                   </div>
                 ))}
+                <button type="button" onClick={handleAddProductField}>Adicionar Produto</button>
               </div>
-
-              <button type="button" onClick={handleAddProductField}>Adicionar Produto</button>
-              <h3>Total: R$ {totalPrice.toFixed(2)}</h3>
-              <button onClick={handleAddOrder}>Adicionar Pedido</button>
-              <button type="button" className="cancel-button" onClick={() => setShowModal(false)}>Cancelar</button>
+              <div className="total-price">
+                <strong>Total: R$ {totalPrice.toFixed(2)}</strong>
+              </div>
+              <button type="button" onClick={handleAddOrder}>Adicionar Pedido</button>
+              <button type="button" onClick={() => setShowModal(false)}>Fechar</button>
             </form>
           </div>
         </div>
