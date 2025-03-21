@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|d:\\meus estudos\\projetos\\estoque\\estoque.backend\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|solutionrelative:services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|d:\\meus estudos\\projetos\\estoque\\estoque.backend\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|d:\\meus estudos\\projetos\\estoque\\estoque.backend\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|solutionrelative:services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|d:\\meus estudos\\projetos\\estoque\\estoque.backend\\models\\ordersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|solutionrelative:models\\ordersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|d:\\meus estudos\\projetos\\estoque\\estoque.backend\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|solutionrelative:services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|d:\\meus estudos\\projetos\\estoque\\estoque.backend\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|solutionrelative:services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|d:\\meus estudos\\projetos\\estoque\\estoque.backend\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|d:\\meus estudos\\projetos\\estoque\\estoque.backend\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|d:\\meus estudos\\projetos\\estoque\\estoque.backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|d:\\meus estudos\\projetos\\estoque\\estoque.backend\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|d:\\meus estudos\\projetos\\estoque\\estoque.backend\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|solutionrelative:services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|d:\\meus estudos\\projetos\\estoque\\estoque.backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|d:\\meus estudos\\projetos\\estoque\\estoque.backend\\services\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,22 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|d:\\meus estudos\\projetos\\estoque\\estoque.backend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|d:\\meus estudos\\projetos\\estoque\\estoque.backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|d:\\meus estudos\\projetos\\estoque\\estoque.backend\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|d:\\meus estudos\\projetos\\estoque\\estoque.backend\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|d:\\meus estudos\\projetos\\estoque\\estoque.backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1DB04947-D24F-4838-9A13-86DF2A220108}|Estoque.Backend.csproj|d:\\meus estudos\\projetos\\estoque\\estoque.backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -70,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -79,32 +83,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IOrderService.cs",
-              "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Services\\IOrderService.cs",
-              "RelativeDocumentMoniker": "Services\\IOrderService.cs",
-              "ToolTip": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Services\\IOrderService.cs",
-              "RelativeToolTip": "Services\\IOrderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
+              "ToolTip": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwvx4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T22:01:07.769Z",
+              "WhenOpened": "2025-03-19T22:02:38.738Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T00:17:41.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Models\\Order.cs",
               "RelativeDocumentMoniker": "Models\\Order.cs",
               "ToolTip": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Models\\Order.cs",
               "RelativeToolTip": "Models\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T21:52:44.462Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "IProductService.cs",
               "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Services\\IProductService.cs",
               "RelativeDocumentMoniker": "Services\\IProductService.cs",
@@ -117,33 +134,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "Services\\ProductService.cs",
-              "ToolTip": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Services\\ProductService.cs",
-              "RelativeToolTip": "Services\\ProductService.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAA0wDUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T00:13:15.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "OrderService.cs",
               "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Services\\OrderService.cs",
               "RelativeDocumentMoniker": "Services\\OrderService.cs",
               "ToolTip": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Services\\OrderService.cs",
               "RelativeToolTip": "Services\\OrderService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwFsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAwwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T22:01:39.52Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "OrdersData.cs",
+              "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Models\\OrdersData.cs",
+              "RelativeDocumentMoniker": "Models\\OrdersData.cs",
+              "ToolTip": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Models\\OrdersData.cs",
+              "RelativeToolTip": "Models\\OrdersData.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T23:30:04.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA5wA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T23:01:10.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Services\\ProductService.cs",
+              "ToolTip": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Services\\ProductService.cs",
+              "RelativeToolTip": "Services\\ProductService.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T00:13:15.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T00:20:41.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Services\\IOrderService.cs",
+              "RelativeDocumentMoniker": "Services\\IOrderService.cs",
+              "ToolTip": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Services\\IOrderService.cs",
+              "RelativeToolTip": "Services\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T22:01:07.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
@@ -151,64 +220,11 @@
               "RelativeToolTip": "Controllers\\ProductController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T01:18:40.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T01:18:40.231Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T00:17:41.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
-              "ToolTip": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "Controllers\\OrdersController.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAcwEMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T22:02:38.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Models\\Product.cs",
-              "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAwwAQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T23:01:10.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T00:20:41.643Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -216,12 +232,11 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-14T00:26:48.15Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T00:26:48.15Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Auth\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Auth\\Controllers\\AuthController.cs",
@@ -233,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Estoque.Backend.csproj",
               "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Estoque.Backend.csproj",
               "RelativeDocumentMoniker": "Estoque.Backend.csproj",
@@ -245,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "AuthService.cs",
               "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Auth\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Auth\\Services\\AuthService.cs",
@@ -257,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Meus Estudos\\Projetos\\Estoque\\Estoque.Backend\\Auth\\Models\\User.cs",
               "RelativeDocumentMoniker": "Auth\\Models\\User.cs",

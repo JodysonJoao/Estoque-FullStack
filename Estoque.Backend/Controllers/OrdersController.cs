@@ -21,6 +21,20 @@ namespace Estoque.Backend.Controllers
             return Ok(_orderService.Get());
         }
 
+        [HttpGet("dashboard")]
+        public IActionResult GetDashboardData()
+        {
+            try
+            {
+                var ordersData = _orderService.GetOrdersData();
+                return Ok(ordersData);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro ao buscar dados do dashboard: {ex.Message}");
+            }
+        }
+
         [HttpGet("{id}")]
         public IActionResult GetOrder(int id)
         {

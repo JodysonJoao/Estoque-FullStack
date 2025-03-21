@@ -10,5 +10,10 @@ namespace Estoque.Backend.Services
         Task<Order> CreateOrder(Order order);
         void UpdateStatus(int id, string status);
         void DeleteOrder (int orderId);
+        OrdersData GetOrdersData();
+
+        List<SalesCategory> GetSalesByCategory();
+
+        List<LastOrders> GetLastOrders(int count = 5);
     }
 }

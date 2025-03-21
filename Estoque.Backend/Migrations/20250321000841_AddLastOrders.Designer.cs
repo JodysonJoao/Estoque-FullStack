@@ -4,6 +4,7 @@ using Estoque.Backend.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Estoque.Backend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250321000841_AddLastOrders")]
+    partial class AddLastOrders
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,34 +24,6 @@ namespace Estoque.Backend.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("Estoque.Backend.Models.LastOrders", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Client")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Date")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("Total")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("LastOrders");
-                });
 
             modelBuilder.Entity("Estoque.Backend.Models.Order", b =>
                 {
@@ -90,9 +65,6 @@ namespace Estoque.Backend.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("LastOrdersId")
-                        .HasColumnType("int");
-
                     b.Property<int?>("OrderId")
                         .HasColumnType("int");
 
@@ -107,8 +79,6 @@ namespace Estoque.Backend.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("LastOrdersId");
 
                     b.HasIndex("OrderId");
 
@@ -146,33 +116,11 @@ namespace Estoque.Backend.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("Estoque.Backend.Models.SalesCategory", b =>
-                {
-                    b.Property<string>("Category")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("Sales")
-                        .HasColumnType("int");
-
-                    b.HasKey("Category");
-
-                    b.ToTable("SalesCategories");
-                });
-
             modelBuilder.Entity("Estoque.Backend.Models.OrderItem", b =>
                 {
-                    b.HasOne("Estoque.Backend.Models.LastOrders", null)
-                        .WithMany("Products")
-                        .HasForeignKey("LastOrdersId");
-
                     b.HasOne("Estoque.Backend.Models.Order", null)
                         .WithMany("Products")
                         .HasForeignKey("OrderId");
-                });
-
-            modelBuilder.Entity("Estoque.Backend.Models.LastOrders", b =>
-                {
-                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("Estoque.Backend.Models.Order", b =>
